@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #333;
+}
+
+.app {
+    background: thistle;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: all 0.2s;
+}
+
+input[type="text"] {
+    border: 1px solid #3498db;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+button {
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+}
+
+.task:hover {
+    background-color: #f1f1f1;
+}
+
+.completed {
+    color: #95a5a6;
+    text-decoration: line-through;
+}
+
+.task div {
+    display: flex;
+    gap: 8px;
+}
+
+.task button {
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.task button:nth-child(1) {
+    background-color: #2ecc71;
+    color: #ffffff;
+}
+
+.task button:nth-child(2) {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+.task button:nth-child(3) {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+.task button:hover {
+    opacity: 0.9;
+}
